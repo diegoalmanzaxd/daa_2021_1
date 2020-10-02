@@ -37,12 +37,12 @@ def main():
     for a in range(2):
         for e in range(1,33):
             for m in range(1,13):
-                aux=int(a3.get_item(a,e,m))
+                aux=float(a3.get_item(a,e,m))
                 if aux<mayor:
                     mayor=aux
                     fecha[0]=a
                     fecha[1]=e
                     fecha[2]=m
-    print('El mes menos lluvioso fue',a3.get_item(0,0,fecha[2]) ,'en ',a3.get_item(0,fecha[1],0),'con ', round(a3.get_item(fecha[0],fecha[1],fecha[2]),2),'en el año',fecha[0]+2017)
+    print('El mes menos lluvioso fue',a3.get_item(0,0,fecha[2]) ,'en ',a3.get_item(0,fecha[1],0),'con ', a3.get_item(fecha[0],fecha[1],fecha[2]),'en el año',fecha[0]+2017)
    
 main()
